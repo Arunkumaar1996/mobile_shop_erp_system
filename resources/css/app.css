@@ -570,3 +570,255 @@ html.font-size-large {
 .fw-extrabold {
     font-weight: 800;
 }
+
+/* ==========================================================================
+   Premium ERP UI/UX Optimization Core Styles
+   ========================================================================== */
+
+/* Typography & Headers */
+h1, h2, h3, h4, h5, h6, .fw-bold {
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+}
+
+.nav-heading {
+    font-size: 0.7rem !important;
+    letter-spacing: 0.08em;
+    font-weight: 700 !important;
+    color: var(--text-muted) !important;
+    opacity: 0.6;
+}
+
+/* Premium Buttons Enhancement */
+.btn {
+    border-radius: 0.5rem !important;
+    font-weight: 600 !important;
+    font-size: 0.875rem !important;
+    padding: 0.55rem 1.25rem !important;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.btn:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1) !important;
+}
+
+.btn:active {
+    transform: translateY(0) !important;
+}
+
+.btn-sm {
+    padding: 0.4rem 0.85rem !important;
+    font-size: 0.75rem !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25) !important;
+}
+
+/* Premium Form Elements & Data Entry */
+.form-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: var(--text-primary);
+    opacity: 0.85;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.form-control, .form-select, .form-control-sm, .form-select-sm {
+    border-radius: 0.5rem !important;
+    padding: 0.65rem 1rem !important;
+    font-size: 0.9rem !important;
+    background-color: var(--bg-surface) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.form-control-sm, .form-select-sm {
+    padding: 0.4rem 0.75rem !important;
+    font-size: 0.8rem !important;
+}
+
+.form-control:hover, .form-select:hover {
+    border-color: var(--secondary-color) !important;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--bg-surface) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.12) !important;
+}
+
+/* Input Groups & Prepend/Append elements */
+.input-group-text {
+    background-color: var(--bg-app) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-muted) !important;
+    border-radius: 0.5rem !important;
+    padding: 0.65rem 1rem !important;
+    font-size: 0.9rem !important;
+}
+
+.input-group > .form-control, .input-group > .form-select, .input-group > .input-group-text {
+    border-radius: 0.5rem !important;
+}
+
+/* Custom Checkbox/Radio Styling */
+.form-check-input {
+    background-color: var(--bg-surface) !important;
+    border-color: var(--border-color) !important;
+    cursor: pointer;
+    width: 1.15em;
+    height: 1.15em;
+    transition: all 0.2s ease;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1) !important;
+}
+
+.form-check-label {
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding-left: 0.25rem;
+    user-select: none;
+}
+
+/* Card Improvements */
+.card {
+    border-radius: 0.85rem !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--card-shadow) !important;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: var(--bg-app) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 1.1rem 1.5rem !important;
+    color: var(--text-muted) !important;
+}
+
+/* Table Style Upgrades */
+.table-custom-container {
+    border-radius: 0.85rem !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--card-shadow) !important;
+    background-color: var(--bg-surface);
+}
+
+.table-custom th {
+    background-color: var(--bg-app) !important;
+    color: var(--text-muted) !important;
+    font-weight: 700 !important;
+    font-size: 0.75rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em !important;
+    padding: 1rem 1.25rem !important;
+    border-bottom: 2px solid var(--border-color) !important;
+}
+
+.table-custom td {
+    padding: 0.9rem 1.25rem !important;
+    font-size: 0.875rem !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+.table-custom tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table-custom tbody tr:hover {
+    background-color: rgba(79, 70, 229, 0.02) !important;
+}
+
+/* Actions styling in Tables */
+.table-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.table-actions .btn-link {
+    padding: 0.25rem !important;
+    border-radius: 0.25rem !important;
+    color: var(--text-muted) !important;
+    transition: all 0.2s ease !important;
+}
+
+.table-actions .btn-link:hover {
+    color: var(--primary-color) !important;
+    background-color: rgba(79, 70, 229, 0.08) !important;
+    transform: scale(1.1) !important;
+}
+
+.table-actions .btn-link.text-danger:hover {
+    color: var(--danger-color) !important;
+    background-color: rgba(239, 68, 68, 0.08) !important;
+}
+
+/* Tabs Navigation Styling */
+.nav-tabs {
+    border-bottom: 1px solid var(--border-color) !important;
+    gap: 0.25rem;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent !important;
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+    color: var(--text-muted) !important;
+    font-weight: 600 !important;
+    padding: 0.75rem 1.25rem !important;
+    font-size: 0.875rem !important;
+    transition: all 0.2s ease !important;
+}
+
+.nav-tabs .nav-link:hover {
+    color: var(--text-primary) !important;
+    background-color: var(--bg-app) !important;
+    border-color: var(--border-color) var(--border-color) transparent !important;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-color) !important;
+    background-color: var(--bg-surface) !important;
+    border-color: var(--border-color) var(--border-color) transparent !important;
+    position: relative;
+}
+
+.nav-tabs .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+}
