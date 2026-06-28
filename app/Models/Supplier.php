@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Supplier extends Model
+{
+    use HasFactory, SoftDeletes;
+
+    protected $fillable = [
+        'name',
+        'contact_person',
+        'phone',
+        'email',
+        'address',
+        'gstin',
+        'outstanding_balance',
+        'status',
+    ];
+
+    protected $casts = [
+        'outstanding_balance' => 'decimal:2',
+        'status' => 'boolean',
+    ];
+}
